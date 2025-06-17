@@ -1,0 +1,5 @@
+mountpoints:
+  /: https://adobe.sharepoint.com/sites/Summit2023ContentDemo/Shared%20Documents/sites/frescopa
+folders:
+  /products/: /products/default
+  

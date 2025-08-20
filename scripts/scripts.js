@@ -326,7 +326,11 @@ async function loadLazy(doc) {
     import('./acdl/adobe-client-data-layer.min.js'),
   ]);
 
-  if (sessionStorage.getItem('acdl:debug')) {
+ if (window.location.href.includes('.aem.page')) {
+   import('../tools/sidekick/aem-sites-optimizer-preflight.js');
+ }
+
+ if (sessionStorage.getItem('acdl:debug')) {
     import('./acdl/validate.js');
   }
 
